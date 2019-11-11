@@ -1,32 +1,32 @@
-### swaggerÒ»·ÖÖÓÈëÃÅÊ¹ÓÃ
-Ò»¡¢´´½¨swagger²âÊÔÏîÄ¿,ÕâÀïÑ¡ÔñÊ¹ÓÃ**ASP.NET Web Api** Éú³ÉµÄÏîÄ¿½á¹¹ÈçÏÂ:
+### swaggerä¸€åˆ†é’Ÿå…¥é—¨ä½¿ç”¨
+ä¸€ã€åˆ›å»ºswaggeræµ‹è¯•é¡¹ç›®,è¿™é‡Œé€‰æ‹©ä½¿ç”¨**ASP.NET Web Api** ç”Ÿæˆçš„é¡¹ç›®ç»“æ„å¦‚ä¸‹:
 
 ![](images/dev_dir.png)
 
-¶ş¡¢Ê¹ÓÃNuget°ü¹ÜÆ÷°²×°***swashbuckle***
+äºŒã€ä½¿ç”¨NugetåŒ…ç®¡å™¨å®‰è£…***swashbuckle***
 
 ![](images/dll_detail.png)
 
 
-Èı¡¢°²×°³É¹¦Ö®ºó,»áÔÚÄãµÄÏîÄ¿ÖĞÉú³ÉÒ»¸ö**SwaggerConfig.cs**µÄÀà,ÕâÀïÊÇSwaggerÅäÖÃµÄµØ·½
+ä¸‰ã€å®‰è£…æˆåŠŸä¹‹å,ä¼šåœ¨ä½ çš„é¡¹ç›®ä¸­ç”Ÿæˆä¸€ä¸ª**SwaggerConfig.cs**çš„ç±»,è¿™é‡Œæ˜¯Swaggeré…ç½®çš„åœ°æ–¹
 ```c#
-// ÅäÖÃÎÄµµµÄ°æ±¾
+// é…ç½®æ–‡æ¡£çš„ç‰ˆæœ¬
 c.SingleApiVersion("v1", "SwaggerTest");
 
-// ¸øÎÄµµÌí¼Ó×¢ÊÍ,´Ó¿Õ¸öxmlÎÄµµÖĞ¶ÁÈ¡×¢ÊÍĞÅÏ¢
+// ç»™æ–‡æ¡£æ·»åŠ æ³¨é‡Š,ä»ç©ºä¸ªxmlæ–‡æ¡£ä¸­è¯»å–æ³¨é‡Šä¿¡æ¯
  c.IncludeXmlComments(string.Format("{0}/bin/WebAPI.xml", System.AppDomain.CurrentDomain.BaseDirectory));
 
- // ·ÀÖ¹·½·¨ÖØÔØ±¨´í
+ // é˜²æ­¢æ–¹æ³•é‡è½½æŠ¥é”™
 c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
 ```
 
 
-ËÄ¡¢ÔÚÏîÄ¿ÉÏÓÒ»÷->ÊôĞÔ->Éú³É->°ÑxmlÎÄµµÎÄ¼ş¹´Ñ¡ÉÏ
+å››ã€åœ¨é¡¹ç›®ä¸Šå³å‡»->å±æ€§->ç”Ÿæˆ->æŠŠxmlæ–‡æ¡£æ–‡ä»¶å‹¾é€‰ä¸Š,å°†SwaggerTest.xmlæ”¹æˆ**Webapi.xml**
 
 ![](images/xml.png)
 
 
-Îå¡¢ÅäÖÃÍê³ÉÖ®ºóÔËĞĞ²é¿´swaggerÌá¹©µÄÔÚÏßµØÖ·¼´¿É
+äº”ã€é…ç½®å®Œæˆä¹‹åè¿è¡ŒæŸ¥çœ‹swaggeræä¾›çš„åœ¨çº¿åœ°å€å³å¯
 
 http://domain/swagger/ui/index#/
 
