@@ -21,7 +21,7 @@ c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
 ```
 
 
-四、在项目上右击->属性->生成->把xml文档文件勾选上,将SwaggerTest.xml改成**Webapi.xml**
+四、在项目上右击->属性->生成->把xml文档文件勾选上,将SwaggerTest.xml改成**你的项目名.xml**
 
 ![](images/xml.png)
 
