@@ -18,6 +18,10 @@ c.SingleApiVersion("v1", "SwaggerTest");
 
  // 防止方法重载报错
 c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
+
+ // 解决类名重复
+c.UseFullTypeNameInSchemaIds();
+
 ```
 
 
