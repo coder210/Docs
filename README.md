@@ -6,7 +6,9 @@
 
 [git其它信息](./git/git其它信息.md)
 
-[markdown使用文档](./markdonw/markdown.md)
+[markdown使用文档](./markdown/markdown.md)
+
+[linux快捷键](./linux/快捷键.md)
 
 [web应用程序一览][01]
 
